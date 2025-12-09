@@ -1,4 +1,4 @@
-# ** ITW 2025 -- Project 1 Portfolio**
+# **ITW 2025 -- Project 1 Portfolio**
 
 **Nama:** Hilal Arasy Alpapa
 **NPM:** 253040092
