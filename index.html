@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My | Portfolio</title>
+    <link rel="stylesheet" href="public/css/output.css" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body class="bg-[#0f172a]">
+    <!-- navbar start -->
+    <nav class="glass fixed top-0 w-full transition-all duration-500 z-50">
+      <div class="container mx-auto w-5/6 p-4">
+        <div class="flex justify-between items-center">
+          <div class="text-2xl font-bold title">
+            Bud' <span class="sky-text">S</span>
+          </div>
+          <div class="hidden md:flex space-x-6">
+            <a
+              href="#home"
+              class="px-4 py-2 rounded-lg transition-all duration-300 hover:bg-white/5 nav-link"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="px-4 py-2 rounded-lg transition-all duration-300 hover:bg-white/5 nav-link"
+              >About</a
+            >
+            <a
+              href="#services"
+              class="px-4 py-2 rounded-lg transition-all duration-300 hover:bg-white/5 nav-link"
+              >Services</a
+            >
+            <a
+              href="#portfolio"
+              class="px-4 py-2 rounded-lg transition-all duration-300 hover:bg-white/5 nav-link"
+              >Portofolio</a
+            >
+            <a
+              href="#contact"
+              class="px-4 py-2 rounded-lg transition-all duration-300 hover:bg-white/5 nav-link"
+              >Contact</a
+            >
+          </div>
+          <button class="md:hidden text-xl sky-text" id="menuToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="hidden md:hidden mt-4 space-y-2" id="mobileMenu">
+          <a
+            href="#home"
+            class="block py-2 hover:text-sky-400 transition-colors glass p-2 rounded-lg"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="block py-2 hover:text-sky-400 transition-colors glass p-2 rounded-lg"
+            >About</a
+          >
+          <a
+            href="#services"
+            class="block py-2 hover:text-sky-400 transition-colors glass p-2 rounded-lg"
+            >Services</a
+          >
+          <a
+            href="#portfolio"
+            class="block py-2 hover:text-sky-400 transition-colors glass p-2 rounded-lg"
+            >Portofolio</a
+          >
+          <a
+            href="#contact"
+            class="block py-2 hover:text-sky-400 transition-colors glass p-2 rounded-lg"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- home start -->
+    <section
+      id="home"
+      class="min-h-screen flex items-center justify-center relative"
+    >
+      <div class="container md:max-w-10/12 mx-auto mt-28 px-4 relative">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between mb-4"
+        >
+          <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-right">
+            <div class="mb-4">
+              <span class="glass px-4 py-2 rounded-full text-sm sky-text"
+                >👋 Welcome to my portfolio</span
+              >
+            </div>
+            <h1 class="text-2xl md:text-5xl font-bold mb-4 title">
+              Hi, I'm
+              <span class="block text-3xl md:text-6xl sky-text"
+                >Hilal Arasy Alpapa</span
+              >
+            </h1>
+            <div class="text-2xl md:text-3xl relative">
+              <span id="typingText" class="absolute"></span>
+            </div>
+            <p class="text-gray-400 mb-8 mt-16 max-w-lg">
+              Turning ideas into beautiful, functional, and high-quality digital
+              experiences. Ready to build something great together?
+            </p>
+            <div class="flex flex-wrap gap-6 text-sm md:text-base">
+              <a href="#contact">
+                <button class="btn cursor-pointer">
+                  <i class="fas fa-envelope"></i>
+                  Get In Touch
+                </button>
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1y2K-iG3nKAdL7HzLNiKn79uLMu99rOw7/view?usp=drivesdk"
+              >
+                <button
+                  class="px-6 py-3 border border-sky-500/30 rounded-lg hover:bg-sky-500/10 transition-all duration-300 cursor-pointer"
+                >
+                  <i class="fas fa-briefcase"></i>
+                  View Resume
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="flex justify-center" data-aos="fade-left">
+            <div class="relative">
+              <div class="absolute glass rounded-full inset-0"></div>
+              <img
+                src="public/img/profil-hero.png"
+                alt="profil"
+                class="md:w-100 md:h-100 object-cover relative melayang"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- home end -->
+
+    <!-- about start -->
+    <section
+      id="about"
+      class="min-h-screen flex items-center justify-center py-20"
+    >
+      <div class="container md:max-w-10/12 mx-auto px-4">
+        <h2
+          class="text-4xl md:text-5xl font-bold text-center mb-10 md:mb-16 title sky-text"
+          data-aos="fade-up"
+        >
+          About Me
+        </h2>
+        <div class="grid md:grid-cols-2 items-center gap-12">
+          <div data-aos="fade-right">
+            <div class="flex items-center justify-center relative">
+              <img
+                src="public/img/profil.png"
+                alt="pofil"
+                class="glass rounded-lg w-100 card-hover"
+              />
+            </div>
+          </div>
+          <div data-aos="fade-left">
+            <h3 class="text-3xl font-bold mb-6 title">Little Story About Me</h3>
+            <p class="text-gray-400 mb-6">
+              I'm a student at Pasundan University with a deep curiosity for
+              technology and how things work beneath the surface. I love
+              exploring new ideas, building digital solutions, and constantly
+              pushing myself to learn beyond the classroom.
+            </p>
+            <p class="text-gray-400 mb-8">
+              Outside of tech, volleyball has been a big part of my life—both a
+              hobby and my proudest achievement throughout school. It taught me
+              discipline, teamwork, and the drive to keep improving, values I
+              bring into everything I create.
+            </p>
+            <h4 class="sky-text font-bold">Follow Me</h4>
+            <div class="flex gap-3 mt-4">
+              <a
+                href="https://github.com/AbudAS12"
+                class="social rounded-lg"
+                data-aos="fade-left"
+                data-aos-delay="100"
+              >
+                <i class="fab fa-github text-lg"></i>
+              </a>
+              <a
+                href="https://instagram.com/hll.arsyy11"
+                class="social rounded-lg"
+                data-aos="fade-left"
+                data-aos-delay="200"
+              >
+                <i class="fab fa-instagram text-lg"></i>
+              </a>
+              <a
+                href="https://twiter.com/hll.arsyy11"
+                class="social rounded-lg"
+                data-aos="fade-left"
+                data-aos-delay="300"
+              >
+                <i class="fab fa-twitter text-lg"></i>
+              </a>
+              <a
+                href="https://tiktok.com/@igudqq"
+                class="social rounded-lg"
+                data-aos="fade-left"
+                data-aos-delay="400"
+              >
+                <i class="fab fa-tiktok text-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about end -->
+
+    <!-- services start -->
+    <section
+      id="services"
+      class="min-h-screen flex items-center justify-center py-20"
+    >
+      <div class="container md:max-w-5xl mx-auto px-4">
+        <h2
+          class="text-4xl md:text-5xl font-bold text-center mb-16 title sky-text"
+          data-aos="fade-up"
+        >
+          My Services
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="service-card p-6 rounded-lg"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="service-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Web Development</h3>
+            <p class="text-gray-400 mb-4">
+              Building responsive, fast, and user-friendly websites with modern
+              technologies and best practices.
+            </p>
+            <ul class="text-gray-400 space-y-2">
+              <li>
+                <i class="fas fa-check text-sky-500 mr-2"></i> Frontend
+                Development
+              </li>
+              <li>
+                <i class="fas fa-check text-sky-500 mr-2"></i> Backend
+                Development
+              </li>
+              <li>
+                <i class="fas fa-check text-sky-500 mr-2"></i> API Integration
+              </li>
+            </ul>
+          </div>
+          <div
+            class="service-card p-6 rounded-lg"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="service-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Web Development</h3>
+            <p class="text-gray-400 mb-4">
+              Building responsive, fast, and user-friendly websites with modern
+              technologies and best practices.
+            </p>
+            <ul class="text-gray-400 space-y-2">
+              <li>
+                <i class="fas fa-check text-sky-500 mr-2"></i> Frontend
+                Development
+              </li>
+              <li>
+                <i class="fas fa-check text-sky-500 mr-2"></i> Backend
+                Development
+              </li>
+              <li>
+                <i class="fas fa-check text-sky-500 mr-2"></i> API Integration
+              </li>
+            </ul>
+          </div>
+          <div
+            class="service-card p-6 rounded-lg"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="service-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Web Development</h3>
+            <p class="text-gray-400 mb-4">
+              Building responsive, fast, and user-friendly websites with modern
+              technologies and best practices.
+            </p>
+            <ul class="text-gray-400 space-y-2">
+              <li>
+                <i class="fas fa-check text-sky-500 mr-2"></i> Frontend
+                Development
+              </li>
+              <li>
+                <i class="fas fa-check text-sky-500 mr-2"></i> Backend
+                Development
+              </li>
+              <li>
+                <i class="fas fa-check text-sky-500 mr-2"></i> API Integration
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services end -->
+
+    <!-- portfolio 3 tab start -->
+    <section
+      id="portfolio"
+      class="min-h-screen flex items-center justify-center py-20"
+    >
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-4xl md:text-5xl font-bold text-center mb-16 title sky-text"
+          data-aos="fade-up"
+        >
+          Portfolio
+        </h2>
+        <div
+          class="flex justify-center mb-12"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+        >
+          <div
+            class="glass w-full md:w-auto text-sm md:text-xl rounded-lg p-2 flex gap-2"
+          >
+            <button
+              class="tab-button px-6 py-3 rounded-lg font-semibold active"
+              data-tab="projects"
+            >
+              <i class="fas fa-folder-open mr-2"></i>Projects
+            </button>
+            <button
+              class="tab-button px-6 py-3 rounded-lg font-semibold"
+              data-tab="skills"
+            >
+              <i class="fas fa-tools mr-2"></i>Skills
+            </button>
+            <button
+              class="tab-button px-4 py-3 rounded-lg font-semibold"
+              data-tab="achievements"
+            >
+              <i class="fas fa-trophy mr-2"></i>Achievements
+            </button>
+          </div>
+        </div>
+        <!-- project -->
+        <div id="projects" class="tab-content active">
+          <div class="grid md:grid-cols-3 gap-8">
+            <!-- 1 -->
+            <div
+              class="glass rounded-lg overflow-hidden card-hover"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <img
+                src="public/img/p2.png"
+                alt="Project 2"
+                class="w-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2 sky-text">
+                  Comunity Web App
+                </h3>
+                <p class="text-gray-400 mb-4">
+                  Social platform for communities
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span
+                    class="px-3 py-1 bg-sky-500/10 border border-sky-500/20 rounded-full text-xs sky-text"
+                    >Next.js</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-sky-500/10 border border-sky-500/20 rounded-full text-xs sky-text"
+                    >Tailwind</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-sky-500/10 border border-sky-500/20 rounded-full text-xs sky-text"
+                    >Supabase</span
+                  >
+                </div>
+                <div class="flex gap-4">
+                  <a
+                    href="https://cue-x-team111.vercel.app/"
+                    class="hover:text-sky-400 transition-colors"
+                  >
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                  </a>
+                  <a
+                    href="htpps://github.com/AbudAS12"
+                    class="hover:text-sky-400 transition-colors"
+                  >
+                    <i class="fab fa-github"></i> Source Code
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div
+              class="glass rounded-lg overflow-hidden card-hover"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <img
+                src="public/img/p1.png"
+                alt="project 1"
+                class="w-full object-cover transition-transform duration-500 hover:scale-110"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2 sky-text">
+                  Simple Portfolio
+                </h3>
+                <p class="text-gray-400 mb-4">Personal Portfolio Website</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span
+                    class="px-3 py-1 bg-sky-500/10 border border-sky-500/20 rounded-full text-xs sky-text"
+                    >Bootsrap</span
+                  >
+                </div>
+                <div class="flex gap-4">
+                  <a
+                    href="https://abudas12.github.io/itw2025_b_253040092/"
+                    class="hover:text-sky-400 transition-colors"
+                  >
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                  </a>
+                  <a
+                    href="https://github.com/AbudAS12"
+                    class="hover:text-sky-400 transition-colors"
+                  >
+                    <i class="fab fa-github"></i> Source Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- skill -->
+        <div id="skills" class="tab-content">
+          <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+            <div data-aos="fade-right">
+              <h3 class="text-2xl font-bold mb-6 sky-text">
+                Frontend Development
+              </h3>
+              <div class="space-y-6">
+                <div class="skill-item">
+                  <div class="flex justify-between mb-2">
+                    <span class="sky-text">HTML/CSS</span>
+                    <span class="sky-text">90%</span>
+                  </div>
+                  <div class="w-full skill-bar h-3">
+                    <div class="skill-fill" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="flex justify-between mb-2">
+                    <span class="sky-text">JavaScript/TypeScript</span>
+                    <span class="sky-text">80%</span>
+                  </div>
+                  <div class="w-full skill-bar h-3">
+                    <div class="skill-fill" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="flex justify-between mb-2">
+                    <span class="sky-text">React/Vue/Angular</span>
+                    <span class="sky-text">75%</span>
+                  </div>
+                  <div class="w-full skill-bar h-3">
+                    <div class="skill-fill" style="width: 75%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="flex justify-between mb-2">
+                    <span class="sky-text">Tailwind CSS</span>
+                    <span class="sky-text">88%</span>
+                  </div>
+                  <div class="w-full skill-bar h-3">
+                    <div class="skill-fill" style="width: 88%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div data-aos="fade-left">
+              <h3 class="text-2xl font-bold mb-6 sky-text">
+                Backend Development
+              </h3>
+              <div class="space-y-6">
+                <div class="skill-item">
+                  <div class="flex justify-between mb-2">
+                    <span class="sky-text">Node.js/Express</span>
+                    <span class="sky-text">75%</span>
+                  </div>
+                  <div class="w-full skill-bar h-3">
+                    <div class="skill-fill" style="width: 75%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="flex justify-between mb-2">
+                    <span class="sky-text">Python/Django</span>
+                    <span class="sky-text">70%</span>
+                  </div>
+                  <div class="w-full skill-bar h-3">
+                    <div class="skill-fill" style="width: 70%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="flex justify-between mb-2">
+                    <span class="sky-text">Database (SQL/NoSQL)</span>
+                    <span class="sky-text">85%</span>
+                  </div>
+                  <div class="w-full skill-bar h-3">
+                    <div class="skill-fill" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="flex justify-between mb-2">
+                    <span class="sky-text">REST/GraphQL APIs</span>
+                    <span class="sky-text">70%</span>
+                  </div>
+                  <div class="w-full skill-bar h-3">
+                    <div class="skill-fill" style="width: 70%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-12" data-aos="fade-up">
+            <h3 class="text-2xl font-bold mb-8 text-center sky-text">
+              Technologies & Tools
+            </h3>
+            <div class="flex flex-wrap justify-center gap-4">
+              <div
+                class="glass px-6 py-3 rounded-full card-hover cursor-pointer"
+              >
+                <i class="fab fa-git-alt text-orange-500 mr-2"></i> Git
+              </div>
+              <div
+                class="glass px-6 py-3 rounded-full card-hover cursor-pointer"
+              >
+                <i class="fab fa-github text-gray-500 mr-2"></i> GitHub
+              </div>
+              <div
+                class="glass px-6 py-3 rounded-full card-hover cursor-pointer"
+              >
+                <i class="fab fa-figma text-blue-500 mr-2"></i> Figma
+              </div>
+              <div
+                class="glass px-6 py-3 rounded-full card-hover cursor-pointer"
+              >
+                <i class="fas fa-robot text-green-500 mr-2"></i> AI Tools
+              </div>
+              <div
+                class="glass px-6 py-3 rounded-full card-hover cursor-pointer"
+              >
+                <i class="fab fa-ethereum text-purple-500 mr-2"></i> Blockchain
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- achievements -->
+        <div id="achievements" class="tab-content">
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- 1 -->
+            <div
+              class="achievement-card p-6 rounded-lg"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="mb-4">
+                <img src="public/img/s1.jpeg" alt="trophy1" />
+              </div>
+              <h3 class="text-xl font-bold mb-2 sky-text">
+                2nd place in the stacked volleyball tournament
+              </h3>
+              <p class="text-gray-400 mb-2">in 2025</p>
+              <p class="text-sm text-gray-500">
+                Organized by RG Management Club
+              </p>
+            </div>
+            <!-- 2 -->
+            <div
+              class="achievement-card p-6 rounded-lg"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="mb-4">
+                <img src="public/img/s2.jpeg" alt="trophy2" />
+              </div>
+              <h3 class="text-xl font-bold mb-2 sky-text">
+                1nd place in the volleyball tournament
+              </h3>
+              <p class="text-gray-400 mb-2">in 2025</p>
+              <p class="text-sm text-gray-500">
+                Organized by Bintang Muda Bogor
+              </p>
+            </div>
+            <!-- 3 -->
+            <div
+              class="achievement-card p-6 rounded-lg"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="mb-4">
+                <img src="public/img/s3.jpeg" alt="trophy" />
+              </div>
+              <h3 class="text-xl font-bold mb-2 sky-text">
+                2nd place in the volleyball tournament
+              </h3>
+              <p class="text-gray-400 mb-2">in 2024</p>
+              <p class="text-sm text-gray-500">Organized by Tegallega Permai</p>
+            </div>
+            <!-- 4 -->
+            <div
+              class="achievement-card p-6 rounded-lg"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="mb-4">
+                <img src="public/img/s4.jpeg" alt="trophy" />
+              </div>
+              <h3 class="text-xl font-bold mb-2 sky-text">
+                3nd place in the volleyball tournament
+              </h3>
+              <p class="text-gray-400 mb-2">in 2024</p>
+              <p class="text-sm text-gray-500">
+                Organized by Baraya Primus Cup
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio 3 tab end -->
+
+    <!-- contact start -->
+    <section
+      id="contact"
+      class="min-h-screen flex items-center justify-center py-20"
+    >
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-4xl md:text-5xl font-bold text-center mb-16 title sky-text"
+        >
+          Get In Touch
+        </h2>
+        <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          <div data-aos="fade-right">
+            <div class="glass rounded-lg p-6 mb-6">
+              <h3 class="text-2xl font-bold mb-6 sky-text">Get In Touch</h3>
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <i class="fas fa-map-marker-alt sky-text mt-1 mr-4 w-5"></i>
+                  <div>
+                    <h4 class="font-semibold mb-1">Address</h4>
+                    <p class="text-gray-400">
+                      Jl. Kh Abdul Hamid Km7 Pasarean 16810
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <i class="fas fa-phone sky-text mt-1 mr-4 w-5"></i>
+                  <div>
+                    <h4 class="font-semibold mb-1">Phone</h4>
+                    <p class="text-gray-400">+62 838 3469 1675</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <i class="fas fa-envelope sky-text mt-1 mr-4 w-5"></i>
+                  <div>
+                    <h4 class="font-semibold mb-1">Email</h4>
+                    <p class="text-gray-400">arasyalpapahilal@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass rounded-lg overflow-hidden h-64">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.0949307078163!2d106.65298897370636!3d-6.63513166485991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69d09fad676d11%3A0x37c8d7bd14074f6d!2sPasarean%2C%20Kec.%20Pamijahan%2C%20Kabupaten%20Bogor%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1764594262987!5m2!1sid!2sid"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                class="w-full h-full"
+              ></iframe>
+            </div>
+          </div>
+
+          <div data-aos="fade-left">
+            <div class="glass rounded-lg p-6">
+              <h3 class="text-2xl font-bold mb-6 sky-text">
+                Send Me a Message
+              </h3>
+              <form id="contactForm">
+                <div class="mb-6">
+                  <label class="block text-sm font-medium mb-2">Name</label>
+                  <input
+                    type="text"
+                    id="contactName"
+                    required
+                    class="w-full px-4 py-3 rounded-lg bg-slate-800/50 border border-sky-500/20 focus:border-sky-500 focus:outline-none transition-colors"
+                  />
+                </div>
+                <div class="mb-6">
+                  <label class="block text-sm font-medium mb-2">Email</label>
+                  <input
+                    type="email"
+                    id="contactEmail"
+                    required
+                    class="w-full px-4 py-3 rounded-lg bg-slate-800/50 border border-sky-500/20 focus:border-sky-500 focus:outline-none transition-colors"
+                  />
+                </div>
+                <div class="mb-6">
+                  <label class="block text-sm font-medium mb-2">Subject</label>
+                  <input
+                    type="text"
+                    id="contactSubject"
+                    required
+                    class="w-full px-4 py-3 rounded-lg bg-slate-800/50 border border-sky-500/20 focus:border-sky-500 focus:outline-none transition-colors"
+                  />
+                </div>
+                <div class="mb-6">
+                  <label class="block text-sm font-medium mb-2">Message</label>
+                  <textarea
+                    id="contactMessage"
+                    rows="5"
+                    required
+                    class="w-full px-4 py-3 rounded-lg bg-slate-800/50 border border-sky-500/20 focus:border-sky-500 focus:outline-none transition-colors"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn">
+                  <i class="fas fa-paper-plane mr-2"></i> Send Message
+                </button>
+              </form>
+              <div id="formMessage" class="mt-4 p-4 rounded-lg hidden"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact end -->
+
+    <footer class="py-8 glass border-t border-sky-500/10">
+      <div class="container mx-auto px-4 text-center">
+        <p class="text-gray-400">© 2025 Hilal Arasy Alpapa</p>
+      </div>
+    </footer>
+
+    <!-- back to top -->
+    <button
+      id="backToTop"
+      class="fixed bottom-10 right-5 w-12 h-12 bg-sky-500 rounded-full flex items-center justify-center invisible transition-all duration-300 hover:bg-sky-400 z-50"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="public/js/script.js"></script>
+  </body>
+</html>
